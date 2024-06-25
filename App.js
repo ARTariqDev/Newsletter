@@ -1,11 +1,12 @@
-import { NavigationContainer } from "@react-navigation/native";
+import * as React from "react";
+import { StatusBar } from "react-native";
 import RootNavigator from "./navigators/RootNavigator";
 
-// App.js is already setup by wrapping NavigationContainer around Root Navigator
 export default function App() {
   return (
-    <NavigationContainer>
+    <>
+      <StatusBar barStyle="dark-content" />
       <RootNavigator />
-    </NavigationContainer>
+    </>
   );
 }
